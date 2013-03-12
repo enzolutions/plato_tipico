@@ -25,12 +25,16 @@
 /**
  * Rebuild project list
  *
+ * @param $refresh
+ *   TRUE: Refresh project list.
+ *
  * @return array
+ *   Array of project objects to be considered for translation update.
  */
-function l10n_update_build_projects() {
+function l10n_update_build_projects($refresh = FALSE) {
   module_load_include('inc', 'l10n_update');
   // Get all stored projects, including disabled ones
-  $current = l10n_update_get_projects(NULL, TRUE);
+  $current = l10n_update_get_projects($refresh, TRUE);
   // Now get the new project list, just enabled ones
   $projects = l10n_update_project_list();
 
@@ -61,11 +65,6 @@ function l10n_update_build_projects() {
           }
         }
       }
-      elseif ($name == "drupal" || preg_match("/HEAD/", $data['info']['version'], $matches)) {
-        // Pick latest available release.
-        $release = array_shift($projects_info[$name]['releases']);
-      }
-
       if (!empty($release['version'])) {
         $data['info']['version'] = $release['version'];
       }
@@ -136,7 +135,7 @@ function l10n_update_project_refresh($modules) {
   $projects = array();
 
   // Get all current projects, including the recently installed.
-  $current_projects = l10n_update_build_projects();
+  $current_projects = l10n_update_build_projects(TRUE);
   // Collect project data of newly installed projects.
   foreach ($modules as $name) {
     if (isset($current_projects[$name])) {
