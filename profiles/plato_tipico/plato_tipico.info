@@ -56,6 +56,7 @@ dependencies[] = entity_translation
 ; Other
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = coffee
 dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = libraries
