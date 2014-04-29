@@ -99,3 +99,20 @@ dependencies[] = security_review
 dependencies[] = link
 dependencies[] = phone
 dependencies[] = email
+
+; Responsive Modules
+dependencies[] = modernizr
+dependencies[] = picture
+dependencies[] = retina_images
+dependencies[] = flexslider
+dependencies[] = resp_img
+dependencies[] = cs_adaptive_image
+dependencies[] = fitvids
+dependencies[] = vef_picture
+dependencies[] = breakpoints
+dependencies[] = context_breakpoint
+dependencies[] = oa_responsive_regions
+dependencies[] = flexslider_picture
+dependencies[] = flexslider_views
+dependencies[] = flexslider_fields
+dependencies[] = flexslider
