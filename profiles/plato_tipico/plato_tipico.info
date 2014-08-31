@@ -47,9 +47,9 @@ dependencies[] = ctools
 ; Views
 dependencies[] = views
 dependencies[] = views_ui
+dependencies[] = views_slideshow 
 
-
-; Multilingual - Entity Translation
+;Multilingual - Entity Translation
 dependencies[] = entity_translation
 
 ; Multilingual - Internationalization
@@ -73,32 +73,35 @@ dependencies[] = i18n_variable
 ; Other
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = advanced_help
 dependencies[] = coffee 
-dependencies[] = entity
-dependencies[] = entity_token
-dependencies[] = module_filter
-dependencies[] = libraries
 dependencies[] = context
 dependencies[] = context_ui
+dependencies[] = date
+dependencies[] = elysia_cron
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = email
+dependencies[] = globalredirect
 dependencies[] = googleanalytics
+dependencies[] = jquery_update
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = module_filter
 dependencies[] = masquerade
 dependencies[] = metatag
 dependencies[] = metatag_ui
 dependencies[] = metatag_opengraph
 dependencies[] = pathauto
 dependencies[] = pathologic
-dependencies[] = globalredirect
+dependencies[] = phone
+dependencies[] = print
+dependencies[] = rules
+dependencies[] = security_review
 dependencies[] = token
 dependencies[] = transliteration
-dependencies[] = wysiwyg
-dependencies[] = advanced_help
-dependencies[] = print
 dependencies[] = xmlsitemap
-dependencies[] = elysia_cron
-dependencies[] = security_review
-dependencies[] = link
-dependencies[] = phone
-dependencies[] = email
+dependencies[] = wysiwyg
 
 ; Responsive Modules
 dependencies[] = modernizr
